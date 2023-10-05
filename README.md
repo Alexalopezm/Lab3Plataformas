@@ -5,4 +5,6 @@
 
 - Alexa López Marcos, B94353
 
-# Script `verificador`
+# Script `ArreglosyRecursividad`
+
+# Script `ArreglosyPunteros`
