@@ -38,6 +38,8 @@ void encontrarMinMax(int *arreglo, int *minimo, int *maximo, int longitud) {
             *maximo = arreglo[i];
         }
     }
+    printf("Minimo (con punteros): %d\n", *minimo);
+    printf("Maximo (con punteros): %d\n", *maximo);
 }
 
 int main() {
@@ -45,6 +47,8 @@ int main() {
     int longitud = sizeof(arreglo) / sizeof(arreglo[0]);
     int minimo, maximo;
 
+    printf("El array es: %d, %d, %d, %d, %d, %d, %d, %d \n", arreglo[0],arreglo[1],arreglo[2],arreglo[3],arreglo[4],arreglo[5],arreglo[6],arreglo[7]);
+    
     // Llamamos a la función para encontrar el mínimo
     minimo = encontrarMinimo(arreglo, longitud);
 
@@ -54,7 +58,6 @@ int main() {
     // Llamamos a la función para encontrar el mínimo y máximo usando punteros
     encontrarMinMax(arreglo, &minimo, &maximo, longitud);
 
-    printf("El array es: %d, %d, %d, %d, %d, %d, %d, %d \n", arreglo[0],arreglo[1],arreglo[2],arreglo[3],arreglo[4],arreglo[5],arreglo[6],arreglo[7]);
     printf("Minimo: %d\n", minimo);
     printf("Maximo: %d\n", maximo);
 
